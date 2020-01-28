@@ -7,13 +7,13 @@ module.exports = {
     useNullAsDefault: true,
     connection: {
       filename: './data/users.db3'
+    },
+    migrations: {
+      directory: './data/migrations'
+    },
+    migrations: {
+      seeds: './data/seeds'
     }
-  },
-  migrations: {
-    directory: './data/migrations'
-  },
-  migrations: {
-    seeds: './data/seeds'
   },
   staging: {
     client: 'postgresql',
