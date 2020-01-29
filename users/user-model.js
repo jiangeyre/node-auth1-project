@@ -1,12 +1,4 @@
-const db = require('../data/db-config');
-
-module.exports = {
-    getUsers,
-    getUser,
-    add,
-    update,
-    remove
-};
+const db = require('../database/dbConfig');
 
 const getUsers = () => {
   return db('user');
@@ -35,4 +27,12 @@ const remove = (id) => {
   return db('user')
     .where({ id })
     .del();
+};
+
+module.exports = {
+  getUsers,
+  getUser,
+  add,
+  update,
+  remove
 };
