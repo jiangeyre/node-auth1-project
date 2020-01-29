@@ -30,8 +30,6 @@ const sessionConfig = {
   }),
 };
 
-
-
 server.use(helmet());
 server.use(session(sessionConfig));
 server.use(logger);
